@@ -1,7 +1,9 @@
-Possiveis problemas:
-(TESTES) Conflito de portas entre o app e o jest:
-Para resolver esse problema, é necessário criar um arquivo chamado server.ts e nele você configura todas as inicializações do seu projeto.
+# Possiveis problemas:
 
+### (TESTES) Conflito de portas entre o *app* e o *jest*:
+Para resolver esse problema, é necessário criar um arquivo chamado
+``server.ts`` e nele você configura todas as inicializações do seu projeto.
+```js
 //Exemplo de um arquivo server.ts
 import app from "./app";
 import { AppDataSource } from "./data-source";
@@ -14,4 +16,6 @@ const init = async () => {
   });
 }
 init();
-Fique a vontade para contribuir logo abaixo nerd_face
+```
+
+*Fique a vontade para contribuir logo abaixo* 🤓
